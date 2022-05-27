@@ -15,9 +15,8 @@ steps:
     displayName: 'Use .NET SDK $(dotnetSdkVersion)'
     inputs:
       packageType: sdk
-      git add Tailspin.SpaceGame.Web.Tests/Tailspin.SpaceGame.Web.Tests.csproj
-      git commit -m "Add coverlet.msbuild package"      version: '$(dotnetSdkVersion)'
-
+      version: '$(dotnetSdkVersion)'
+      
   - task: Npm@1
     displayName: 'Run npm install'
     inputs:
